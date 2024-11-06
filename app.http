@@ -1,0 +1,66 @@
+GET http://localhost:3000/states/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+###
+
+GET http://localhost:3000/states/8/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+###
+
+POST http://localhost:3000/districts/
+
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+###
+
+
+GET http://localhost:3000/districts/322/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+
+###
+
+
+DELETE http://localhost:3000/districts/322/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+###
+
+
+
+PUT http://localhost:3000/districts/2/
+Content-Type:application/json
+
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+
+GET http://localhost:3000/states/:stateId/stats/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNzMwODE0NDIxfQ.zdm4xahvAmWRhW8C4jixzuVnzSDbSLYIJ2Hd6QuaEo4
+
+
+###
+
+
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
